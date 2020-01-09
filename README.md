@@ -1,8 +1,8 @@
-Bookmarks.dev Chrome Extension
+[Bookmarks.dev Chrome Extension](https://chrome.google.com/webstore/detail/save-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb)
 ---
 The official chrome extension for www.bookmarks.dev, the bookmark manager for Developers & Co. 
 
-Save current's tab URL to [Bookmarks.dev](www.bookmarks.dev). You need to have an account to begin with.
+Save current's tab URL to [Bookmarks.dev](https://www.bookmarks.dev). You need to have an account to begin with.
 
 A popup window is launched where you can add the metadata for the bookmark. **Title** and **description** are autocompleted
 for you. (description is filled with `meta="description"` value if present on the website)
