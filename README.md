@@ -11,7 +11,7 @@ for you. (description is filled with `meta="description"` value if present on th
 field. 
 
 **creationAt** (if youtube video or stackoverflow question)
- ![Chrome extension screenshot](docs/img/screenshot-chrome-extension.png)
+ ![Chrome extension screenshot](docs/img/chrome-extension-usage.gif)
 
 ## Upload to Google Chrome Webstore
 
