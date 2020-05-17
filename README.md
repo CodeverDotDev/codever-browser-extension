@@ -17,7 +17,7 @@ field.
 
 First of all package it as a zip file:
 ```shell
-zip -r bookmarks.dev.chrome.extension.zip * -x *.idea* *.git* *.docs* *README.md*
+zip -r bookmarks.dev.chrome.extension.zip * -x *.idea* *.git* '*docs/*' "*README.md*"
 ```
 
 Go to [Chrome Webstore Dashboard](https://chrome.google.com/webstore/developer/dashboard) where

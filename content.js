@@ -8,15 +8,15 @@ if ( document.getSelection ) {
 var t = document.title;
 var w, h;
 if (innerWidth > 1500) {
-  w = 1210;
+  w = 1050;
 } else {
-  w = (innerWidth * 80 ) / 100;
+  w = (innerWidth * 70 ) / 100;
 }
 
-if(innerHeight > 1500) {
-  h = 1210;
+if(innerHeight > 1400) {
+  h = 1050;
 } else {
-  h = (innerHeight * 90 ) / 100;
+  h = (innerHeight * 85 ) / 100;
 }
-var features = `toolbar=no,width=${w},height=${h},top=0, left=0`;
+var features = `toolbar=no,width=${w},height=${h},top=${innerHeight - h}, left=${innerWidth - w}`;
 open('https://www.bookmarks.dev/personal/new?url=' + encodeURIComponent(l) + '&desc=' + encodeURIComponent(d) + '&title=' + encodeURIComponent(t) + '&popup=true', 'Bookmarks.dev', features);
