@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Save to Bookmarks.dev",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Save the active tab's URL as a bookmark to www.bookmarks.dev",
   "icons": {
     "48": "icons/icon48.png",
