@@ -1,15 +1,15 @@
-chrome.browserAction.onClicked.addListener(launchBookmarksDevDialog);
+browser.browserAction.onClicked.addListener(launchBookmarksDevDialog);
 
 function launchBookmarksDevDialog() {
-    chrome.tabs.executeScript({
+    browser.tabs.executeScript({
         file: 'launch-bookmarksdev-dialog.js'
     });
 };
 
-chrome.contextMenus.onClicked.addListener(launchBookmarksDevDialog);
+browser.contextMenus.onClicked.addListener(launchBookmarksDevDialog);
 
-chrome.runtime.onInstalled.addListener(function () {
-    chrome.contextMenus.create({
+browser.runtime.onInstalled.addListener(function () {
+    browser.contextMenus.create({
         "id": "save-link-to-bookmarksdev",
         "title": "Save link to Bookmarks.dev",
         "contexts": ["all"]
