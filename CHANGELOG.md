@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.1.0] - 2020-06-27
 
 ### Added
-- more picture to [docs](./docs)
+- more picture to [docs](resources)
 - CHANGELOG
 
 ### Changed

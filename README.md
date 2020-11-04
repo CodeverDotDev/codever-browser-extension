@@ -6,16 +6,15 @@ Browser extension to easily save links to [www.bookmarks.dev]((https://www.bookm
 ## Install
 This browser extension is available for:
 
-| ![Chrome](docs/img/logo/chrome-48.png) | ![Firefox](docs/img/logo/fx-48.png) |
+| [![Chrome](assets/img/chrome-logo-48.png)](https://chrome.google.com/webstore/detail/save-url-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb) | [![Firefox](assets/img/firefox-logo-48.png)](TODO-add-link-to-firefox-store) |
 |:---:|:---:|
 | [Chrome](https://chrome.google.com/webstore/detail/save-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb) | ![Firefox](TODO-add-link-to-firefox-store) |
 
-> If your company blocks Browser Extensions, or you have a tight security blocking pop-up windows from extensions 
+> If your company blocks Browser Extensions, or you have a tight security blocking pop-up windows from extensions (**Firefox blocks new windows from pages by default**)
 > you can use the [available bookmarklets](https://www.bookmarks.dev/howto/bookmarklets) which offer the same functionality 
 
 ## How to use  
-
-Save current's tab URL to [Bookmarks.dev](https://www.bookmarks.dev). You need to have an account to begin with.
+Right click OR click the extension icon to save the active tab's link to [Bookmarks.dev](https://www.bookmarks.dev).
 
 A popup window is launched where you can add the metadata for the bookmark. **Title** and **description** are auto completed.
  (the **description** is filled with `meta="description"` value if present on the website, unless to select text on the page,
@@ -23,7 +22,7 @@ A popup window is launched where you can add the metadata for the bookmark. **Ti
 
 > For youtube videos and stackoverflow questions the **tags** and **published on** are also auto-completed
 
- ![Chrome extension screenshot](docs/img/howto-save-bookmark-with-extension.gif)
+ ![Chrome extension screenshot](assets/img/chrome-howto-save-bookmark-with-extension.gif)
 
 ## Testing locally
 Check out the git repository - `git clone https://github.com/BookmarksDev/bookmarks.dev-chrome-extension.git`
@@ -32,7 +31,7 @@ Check out the git repository - `git clone https://github.com/BookmarksDev/bookma
 Go to [chrome://extensions/](chrome://extensions/), click **Load unpacked** and select the `bookmarks.dev-chrome-extension`
 where you have checked it out:
 
-![Install locally](docs/img/install-locally-and-reload-extension.png)
+![Install locally](assets/img/chrome-install-locally-and-reload-extension.png)
 
 > Click "Reload" on the extension when you do modifications 
 
@@ -57,7 +56,7 @@ and redploys automatically.
 Go to [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-firefox), click **Load Temporary Add-on...**
  and select the `manifest.json` file from the `save-code-to-bookmarks.dev-browser-extension` folder where you have checked it out:
 
-![Install locally on Firefox](docs/img/install-locally-and-reload-extension.png)
+![Install locally on Firefox](assets/img/chrome-install-locally-and-reload-extension.png)
 
 ### Test the extension against the [`localhost`](https://github.com/BookmarksDev/bookmarks.dev) version of Bookmarks.dev
 Change the following line in [launch-bookmarksdev-dialog](launch-bookmarksdev-dialog.js):
@@ -71,11 +70,16 @@ open('http://localhost:4200/personal/new?url=' + encodeURIComponent(l) + '&desc=
 
 and Reload the extension 
 
-## Upload to Google Chrome Webstore
+## Publish browser extension to official stores
 
-First of all package it as a zip file:
+First of all zip the file either with `web-ext`
+```
+web-ext build -i 'resources'
+```
+
+or with the _standard_ `zip` command:
 ```shell
-zip -r bookmarks.dev.chrome.extension.zip * -x *.idea* *.git* '*docs/*' "*README.md*"
+zip -r bookmarks.browser.extension.zip * -x *.idea* *.git* '*resources/*' "*README.md*"
 ```
 
 Go to [Chrome Webstore Dashboard](https://chrome.google.com/webstore/developer/dashboard) where
