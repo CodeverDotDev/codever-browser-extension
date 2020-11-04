@@ -20,8 +20,12 @@ browser.contextMenus.create({
 })
 
 browser.contextMenus.onClicked.addListener((info, tab) => {
-    if (info.menuItemId === 'save-link-to-bookmarksdev') {
-        launchBookmarksDevDialog();
+    if ( info.menuItemId === 'save-link-to-bookmarksdev' ) {
+        browser.tabs.query({active: true, currentWindow: true}, function (tabs) {
+            browser.tabs.sendMessage(tabs[0].id, {action: "new_tab"}, function (response) {
+                browser.tabs.create({url: response.url});
+            });
+        });
     }
 })
 
