@@ -20,5 +20,6 @@
         h = (innerHeight * 90) / 100;
     }
     const features = `toolbar=no,width=${w},height=${h},top=${innerHeight - h}, left=${innerWidth - w}`;
-    open('https://www.bookmarks.dev/personal/new?url=' + encodeURIComponent(l) + '&desc=' + encodeURIComponent(d) + '&title=' + encodeURIComponent(t) + '&popup=true', 'Bookmarks.dev', features);
+    const url = `https://www.bookmarks.dev/personal/new?url=${encodeURIComponent(l)}&desc=${encodeURIComponent(d)}&title=${encodeURIComponent(t)}&popup=true`;
+    open(url, 'Bookmarks.dev', features);
 }
