@@ -74,12 +74,12 @@ and Reload the extension
 
 First of all zip the file either with `web-ext`
 ```
-web-ext build -i 'resources'
+web-ext build -i 'resources' 'assets' 'README.md' 
 ```
 
 or with the _standard_ `zip` command:
 ```shell
-zip -r bookmarks.browser.extension.zip * -x *.idea* *.git* '*resources/*' "*README.md*"
+zip -r bookmarks.browser.extension.zip * -x *.idea* *.git* '*resources/*' '*assets/*' "*README.md*"
 ```
 
 Go to [Chrome Webstore Dashboard](https://chrome.google.com/webstore/developer/dashboard) where
