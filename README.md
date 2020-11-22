@@ -74,15 +74,15 @@ and Reload the extension
 
 First of all zip the file either with `web-ext`
 ```
-web-ext build -i 'resources' 'assets' 'README.md'
+web-ext build -i 'resources' 'assets' 'README.md' 'CHANGELOG.md'
 
 ## with overwrite 
-web-ext build --overwrite-dest -i 'resources' 'assets' 'README.md' 
+web-ext build --overwrite-dest -i 'resources' 'assets' 'README.md' 'CHANGELOG.md' 
 ```
 
 or with the _standard_ `zip` command:
 ```shell
-zip -r bookmarks.browser.extension.zip * -x *.idea* *.git* '*resources/*' '*assets/*' "*README.md*" '*web-ext-artifacts/*'
+zip -r bookmarks.browser.extension.zip * -x *.idea* *.git* '*resources/*' '*assets/*' "*README.md*" "*CHANGELOG.md*" '*web-ext-artifacts/*'
 ```
 
 ### Publish to Google Chrome Webstore
