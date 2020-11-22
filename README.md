@@ -74,7 +74,10 @@ and Reload the extension
 
 First of all zip the file either with `web-ext`
 ```
-web-ext build -i 'resources' 'assets' 'README.md' 
+web-ext build -i 'resources' 'assets' 'README.md'
+
+## with overwrite 
+web-ext build --overwrite-dest -i 'resources' 'assets' 'README.md' 
 ```
 
 or with the _standard_ `zip` command:
@@ -88,3 +91,5 @@ you upload the .zip file. Wait for a couple of business days for an approval.
 
 
 ### Publish to [Firefox Webstore](https://extensionworkshop.com/documentation/publish/)
+
+Go to [Add-ons page](https://addons.mozilla.org/en-US/developers/addons) and submit the new addon
