@@ -6,9 +6,9 @@ Browser extension to easily save links from the web to [www.bookmarks.dev](https
 ## Install
 This browser extension is available for:
 
-| [![Chrome](assets/img/chrome-logo-48.png)](https://chrome.google.com/webstore/detail/save-url-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb) | [![Firefox](assets/img/firefox-logo-48.png)](TODO-add-link-to-firefox-store) |
+| [![Chrome](assets/img/chrome-logo-48.png)](https://chrome.google.com/webstore/detail/save-url-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb) | [![Firefox](assets/img/firefox-logo-48.png)](https://addons.mozilla.org/en-US/firefox/addon/save-link-to-bookmarks-dev/) |
 |:---:|:---:|
-| [Chrome](https://chrome.google.com/webstore/detail/save-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb) | ![Firefox](TODO-add-link-to-firefox-store) |
+| [Chrome](https://chrome.google.com/webstore/detail/save-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb) | ![Firefox](https://addons.mozilla.org/en-US/firefox/addon/save-link-to-bookmarks-dev/) |
 
 > If you can't use Browser Extensions, or you have a tight security blocking pop-up windows from extensions 
 > (**Firefox blocks new windows from pages by default**) you can use [our bookmarklets](https://www.bookmarks.dev/howto/bookmarklets)
