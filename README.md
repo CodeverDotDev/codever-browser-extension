@@ -1,6 +1,6 @@
-Bookmarks Browser Extension
+Codever Browser Extension
 ---
-Browser extension to easily save links from the web to [www.bookmarks.dev](https://www.bookmarks.dev),
+Browser extension to easily save bookmarks and snippets from the web to [www.codever.land](https://www.codever.land),
  the Bookmarks and Code Snippets Manager for Developers & Co.
  
 ## Install
@@ -11,21 +11,19 @@ This browser extension is available for:
 | [Chrome](https://chrome.google.com/webstore/detail/save-to-bookmarksdev/diofdblfhjbpgackifolmboaiccmebjb) | [Firefox](https://addons.mozilla.org/en-US/firefox/addon/save-link-to-bookmarks-dev/) |
 
 > If you can't use Browser Extensions, or you have a tight security blocking pop-up windows from extensions 
-> (**Firefox blocks new windows from pages by default**) you can use [our bookmarklets](https://www.bookmarks.dev/howto/bookmarklets)
+> (**Firefox blocks new windows from pages by default**) you can use [our bookmarklets](https://www.codever.land/howto/bookmarklets)
 > which offer the same functionality 
 
 ## How to use  
-**Right click** OR **click the extension icon** to save the active tab's link to [Bookmarks.dev](https://www.bookmarks.dev).
-
-> Optionally you can select text on the webpage beforehand, to be saved in the "description" field, otherwise the
-> value from `meta="description"` is used if present on the website
+**Right click** OR **click the extension icon** to save a bookmark or snippet to [Codever.land](https://www.codever.land)
+- if you make a selection on the web page you will be asked to save as new snippets or bookmark
 
 ![Chrome extension screenshot](assets/img/bookmarks-browser-extension-in-action-optimized-800x500.gif)
 
-> For youtube videos and stackoverflow questions the **tags** and **published on** are also auto-completed
+> For youtube videos and stackoverflow questions the **tags** are auto-completed
 
 ## Testing locally
-Check out the git repository - `git clone https://github.com/BookmarksDev/bookmarks-browser-extension.git`
+Check out the git repository - `git clone https://github.com/CodeverLand/codever-browser-extension.git`
 
 ## Chrome/Brave
 Go to [chrome://extensions/](chrome://extensions/), click **Load unpacked** and select the `bookmarks.dev-chrome-extension`
@@ -49,7 +47,7 @@ and then run the following command in the root directory of the project
 web-ext run
 ```
 
-This installs "Save link to Bookmarks.dev" as a temporary add-on, and it watches for changes in the source code
+This installs **Codever** as a temporary add-on, and it watches for changes in the source code
 and **redeploys automatically**.
 
 #### Manual deployment
@@ -58,14 +56,14 @@ Go to [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-fire
 
 ![Install locally on Firefox](assets/img/chrome-install-locally-and-reload-extension.png)
 
-### Test the extension against the [`localhost`](https://github.com/BookmarksDev/bookmarks.dev) version of Bookmarks.dev
-Change the following line in [launch-bookmarksdev-dialog](launch-bookmarksdev-dialog.js):
+### Test the extension against the [`localhost`](https://github.com/CodeverLand/bookmarks.dev) version of Codever.land
+Change the following line in [launch-bookmarksdev-dialog](launch-codever-dialog.js):
 ```
-open('https://www.bookmarks.dev/personal/new?url=' + encodeURIComponent(l) + '&desc=' + encodeURIComponent(d) + '&title=' + encodeURIComponent(t) + '&popup=true', 'Bookmarks.dev', features);
+open('https://www.codever.land/personal/new?url=' + encodeURIComponent(l) + '&desc=' + encodeURIComponent(d) + '&title=' + encodeURIComponent(t) + '&popup=true', 'Codever.land', features);
 ```
 to
 ```
-open('http://localhost:4200/personal/new?url=' + encodeURIComponent(l) + '&desc=' + encodeURIComponent(d) + '&title=' + encodeURIComponent(t) + '&popup=true', 'Bookmarks.dev', features);
+open('http://localhost:4200/personal/new?url=' + encodeURIComponent(l) + '&desc=' + encodeURIComponent(d) + '&title=' + encodeURIComponent(t) + '&popup=true', 'Codever.land', features);
 ```
 
 and Reload the extension 
