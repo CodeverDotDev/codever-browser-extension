@@ -1,6 +1,6 @@
 Codever Browser Extension
 ---
-Browser extension to easily save bookmarks and snippets from the web to [www.codever.land](https://www.codever.land),
+Browser extension to easily save bookmarks and code snippets from the web to [www.codever.land](https://www.codever.land),
  the Bookmarks and Code Snippets Manager for Developers & Co.
  
 ## Install
@@ -83,7 +83,7 @@ or with the _standard_ `zip` command:
 zip -r bookmarks.browser.extension.zip * -x *.idea* *.git* '*resources/*' '*assets/*' "*README.md*" "*CHANGELOG.md*" '*web-ext-artifacts/*'
 ```
 
-### Publish to Google Chrome Webstore
+### Publish to Goo$gle Chrome Webstore
 Go to [Chrome Webstore Dashboard](https://chrome.google.com/webstore/developer/dashboard) where
 you upload the .zip file. Wait for a couple of business days for an approval.
 
