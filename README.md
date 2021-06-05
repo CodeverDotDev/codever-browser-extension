@@ -16,10 +16,9 @@ This browser extension is available for:
 
 ## How to use  
 
-**Right click** OR **click the extension icon** to save a bookmark or snippet to [Codever.land](https://www.codever.land)
-- if you make a selection on the web page you will be asked to save as new snippets or bookmark
-
-> For youtube videos and stackoverflow questions the **tags** are auto-completed
+**Right click** OR **click the extension icon** to save as bookmark or snippet to [Codever.land](https://www.codever.land)
+- if you make a selection on the web page you will be asked to save as new **snippet** or **bookmark**
+- For youtube videos and stackoverflow questions the **tags** are auto-completed
 
 ### Save bookmark
 
