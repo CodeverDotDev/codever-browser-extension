@@ -65,8 +65,8 @@ Go to [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-fire
 
 ![Install locally on Firefox](assets/img/chrome-install-locally-and-reload-extension.png)
 
-### Test the extension against the [`localhost`](https://github.com/CodeverLand/bookmarks.dev) version of Codever.land
-Change the following line in [launch-bookmarksdev-dialog](launch-codever-dialog.js):
+### Test the extension against the [`localhost`](https://github.com/codeverland/codever) version of Codever.land
+Change the following line in [launch-codever-dialog.js](launch-codever-dialog.js):
 ```
 open('https://www.codever.land/personal/new?url=' + encodeURIComponent(l) + '&desc=' + encodeURIComponent(d) + '&title=' + encodeURIComponent(t) + '&popup=true', 'Codever.land', features);
 ```
@@ -92,7 +92,7 @@ or with the _standard_ `zip` command:
 zip -r bookmarks.browser.extension.zip * -x *.idea* *.git* '*resources/*' '*assets/*' "*README.md*" "*CHANGELOG.md*" '*web-ext-artifacts/*'
 ```
 
-### Publish to Goo$gle Chrome Webstore
+### Publish to Google Chrome Webstore
 Go to [Chrome Webstore Dashboard](https://chrome.google.com/webstore/developer/dashboard) where
 you upload the .zip file. Wait for a couple of business days for an approval.
 
