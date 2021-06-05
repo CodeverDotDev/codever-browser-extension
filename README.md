@@ -15,18 +15,27 @@ This browser extension is available for:
 > which offer the same functionality 
 
 ## How to use  
+
 **Right click** OR **click the extension icon** to save a bookmark or snippet to [Codever.land](https://www.codever.land)
 - if you make a selection on the web page you will be asked to save as new snippets or bookmark
 
-![Chrome extension screenshot](assets/img/bookmarks-browser-extension-in-action-optimized-800x500.gif)
-
 > For youtube videos and stackoverflow questions the **tags** are auto-completed
 
+### Save bookmark
+
+![Save bookmark demo](assets/img/gif/codever-save-bookmarks-800x454.gif)
+
+### Save snippet
+
+![Save snippet demo](assets/img/gif/codever-save-snippet-800x454.gif)
+
+
 ## Testing locally
-Check out the git repository - `git clone https://github.com/CodeverLand/codever-browser-extension.git`
+
+Check out the git repository - `git clone https://github.com/codeverland/codever-browser-extension.git`
 
 ## Chrome/Brave
-Go to [chrome://extensions/](chrome://extensions/), click **Load unpacked** and select the `bookmarks.dev-chrome-extension`
+Go to [chrome://extensions/](chrome://extensions/), click **Load unpacked** and select the `codever-browser-extension`
 where you have checked it out:
 
 ![Install locally](assets/img/chrome-install-locally-and-reload-extension.png)
