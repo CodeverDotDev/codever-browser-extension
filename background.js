@@ -1,12 +1,12 @@
-browser.browserAction.onClicked.addListener(launchBookmarksDevDialog);
+browser.browserAction.onClicked.addListener(launchCodeverDialog);
 
-function launchBookmarksDevDialog() {
+function launchCodeverDialog() {
     browser.tabs.executeScript({
         file: 'launch-codever-dialog.js'
     });
 };
 
-browser.contextMenus.onClicked.addListener(launchBookmarksDevDialog);
+browser.contextMenus.onClicked.addListener(launchCodeverDialog);
 
 browser.runtime.onInstalled.addListener(function () {
     browser.contextMenus.create({

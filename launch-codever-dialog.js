@@ -19,9 +19,9 @@
         h = (innerHeight * 90) / 100;
     }
     const features = `toolbar=no,width=${w},height=${h},top=${innerHeight - h}, left=${innerWidth - w}`;
-    let url = `https://www.codever.land/my-bookmarks/new?url=${encodeURIComponent(l)}&desc=${encodeURIComponent(d)}&title=${encodeURIComponent(t)}&popup=true`;
+    let url = `https://www.codever.dev/my-bookmarks/new?url=${encodeURIComponent(l)}&desc=${encodeURIComponent(d)}&title=${encodeURIComponent(t)}&popup=true`;
     if ( d != '' ) {
-        url = `https://www.codever.land/new-entry?url=${encodeURIComponent(l)}&selection=${encodeURIComponent(d)}&title=${encodeURIComponent(t)}&popup=true`;
+        url = `https://www.codever.dev/new-entry?url=${encodeURIComponent(l)}&selection=${encodeURIComponent(d)}&title=${encodeURIComponent(t)}&popup=true`;
     }
     open(url, 'Codever', features);
 }

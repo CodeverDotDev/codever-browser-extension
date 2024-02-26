@@ -1,6 +1,6 @@
 Codever Browser Extension
 ---
-Browser extension to easily save bookmarks and code snippets from the web to [www.codever.land](https://www.codever.land),
+Browser extension to easily save bookmarks and code snippets from the web to [www.codever.dev](https://www.codever.dev),
  the Bookmarks and Code Snippets Manager for Developers & Co.
  
 ## Install
@@ -11,12 +11,12 @@ This browser extension is available for:
 | [Chrome](https://chrome.google.com/webstore/detail/codever/diofdblfhjbpgackifolmboaiccmebjb)| [Firefox](https://addons.mozilla.org/addon/codever/) 
 
 > If you can't use Browser Extensions, or you have a tight security blocking pop-up windows from extensions 
-> (**Firefox blocks new windows from pages by default**) you can use [our bookmarklets](https://www.codever.land/howto/bookmarklets)
+> (**Firefox blocks new windows from pages by default**) you can use [our bookmarklets](https://www.codever.dev/howto/bookmarklet)
 > which offer the same functionality 
 
 ## How to use  
 
-**Right click** OR **click the extension icon** to save as bookmark or snippet to [Codever.land](https://www.codever.land)
+**Right click** OR **click the extension icon** to save as bookmark or snippet to [Codever](https://www.codever.dev)
 - if you make a selection on the web page you will be asked to save as new **snippet** or **bookmark**
 - when bookmarking youtube videos and stackoverflow questions the **tags** are auto-completed
 
@@ -31,7 +31,7 @@ This browser extension is available for:
 
 ## Testing locally
 
-Check out the git repository - `git clone https://github.com/codeverland/codever-browser-extension.git`
+Check out the git repository - `git clone https://github.com/CodeverDotDev/codever-browser-extension.git`
 
 ## Chrome/Brave
 Go to [chrome://extensions/](chrome://extensions/), click **Load unpacked** and select the `codever-browser-extension`
@@ -64,10 +64,11 @@ Go to [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-fire
 
 ![Install locally on Firefox](assets/img/chrome-install-locally-and-reload-extension.png)
 
-### Test the extension against the [`localhost`](https://github.com/codeverland/codever) version of Codever.land
+### Test the extension against the [`localhost`](https://github.com/CodeverDotDev/codever) version of Codever
+
 Change the following line in [launch-codever-dialog.js](launch-codever-dialog.js):
 ```
-open('https://www.codever.land/personal/new?url=' + encodeURIComponent(l) + '&desc=' + encodeURIComponent(d) + '&title=' + encodeURIComponent(t) + '&popup=true', 'Codever.land', features);
+open('https://www.codever.dev/personal/new?url=' + encodeURIComponent(l) + '&desc=' + encodeURIComponent(d) + '&title=' + encodeURIComponent(t) + '&popup=true', 'Codever.land', features);
 ```
 to
 ```
@@ -79,6 +80,7 @@ and Reload the extension
 ## Publish browser extension to official stores
 
 First of all zip the file either with `web-ext`
+
 ```
 web-ext build -i 'resources' 'assets' 'README.md' 'CHANGELOG.md'
 
@@ -87,14 +89,15 @@ web-ext build --overwrite-dest -i 'resources' 'assets' 'README.md' 'CHANGELOG.md
 ```
 
 or with the _standard_ `zip` command:
+
 ```shell
 zip -r bookmarks.browser.extension.zip * -x *.idea* *.git* '*resources/*' '*assets/*' "*README.md*" "*CHANGELOG.md*" '*web-ext-artifacts/*'
 ```
 
 ### Publish to Google Chrome Webstore
+
 Go to [Chrome Webstore Dashboard](https://chrome.google.com/webstore/developer/dashboard) where
 you upload the .zip file. Wait for a couple of business days for an approval.
-
 
 ### Publish to [Firefox Webstore](https://extensionworkshop.com/documentation/publish/)
 
