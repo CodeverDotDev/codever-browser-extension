@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.0.0]
+
+Migrate to [www.codever.dev](https://www.codever.dev) and use Chrome Manifest V3
+
 ## [3.0.0]
 
 Migrate [www.bookmarks.dev](https://www.bookmarks.dev) to [www.codever.land](https://www.codever.land)
